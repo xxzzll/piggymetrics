@@ -156,8 +156,7 @@ services:
   monitoring:
     environment:
       CONFIG_SERVICE_PASSWORD: $CONFIG_SERVICE_PASSWORD
-#    image: sqshq/piggymetrics-monitoring
-    image: mlabouardy/hystrix-dashboard
+    image: sqshq/piggymetrics-monitoring
     restart: always
     depends_on:
       config:
